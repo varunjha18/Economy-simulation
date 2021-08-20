@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src='js/graphs.js'>
+      
+      </script> 
+</head>
+
+<body style="background-image: url('img/back2.jpg')">
+    <section id="main" style="background-image: url('img/box3.jpg');opacity: 0.98;">
+    <div class="container" id="heading" style="margin-left: 20px;">
+            <h1 class="primeryh" style="margin-left: 190px;margin-right: -250px;font-size: 60px;
+            line-height: 40px;margin-bottom: -10px;text-decoration: underline;">Economy Simulation<br></h1>
+    </div>
+            
+           <div class="container" id="output">
+            <h1 class="primeryh" style="margin-left: -20px;">OUTPUT </h1>
+            <div>
+                <ul style="margin-left: 20px;">
+                    <li><span id="C"></span></li>
+                    <li><span id="I"></span></li>
+                    <li><span id="G"></span></li>
+                    
+                    <li><span id="Y"></span></li>
+                    <li><span id="F_def"></span></li>
+                    <li><span id="t"></span></li>
+                    <li><span id="MPC"></span></li>
+                    <li><span id="g"></span></li>
+                    <li><span id="gold"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="input">
+            <h1 class="primeryh" style="margin-left: -20px;">INPUT</h1>
+            <div>
+                <p><br>
+                    <span>Enter Tax rate for next year:</span><br> 
+                    0<input type="range" id="tnext" min="0" max="100" class="slider">100<br>
+                    <span>Value: <span id="tnextvalue"></span>%</span>
+                </p>
+
+                <p><br>
+                    <span>Enter Government expenditure for next year:</span><br>
+                    0<input type="range" id="Gnext" min="0" max="1000000000000" class="slider" step="10000000">1T<br>
+                    <span>Value: <span id="Gnextvalue"></span></span>
+                </p>
+                <button id="btn" onclick="check(),app_arr()">Submit</button>
+            </div>
+
+        </div>
+        
+        <div class="container" id="graph" >
+            <h1 class="primeryh" style="margin-left: 320px;">GRAPHS<br></h1>
+            <br>
+            <div id="experiment">
+            <div id="curve_chart" style="width: 550px;  height: 380px;margin-top: 20px;border: 2px solid;;padding-left: -20px;" ></div><br>
+            <div id="curve_chart2" style="width: 550px; height: 380px;margin-top: 20px;border: 2px solid;"></div><br>
+            <div id="curve_chart4" style="width: 550px; height: 380px;margin-top: 20px;border: 2px solid;"></div><br>
+            <div id="curve_chart5" style="width: 550px; height: 380px;margin-top: 20px;border: 2px solid;"></div><br>
+            <div id="curve_chart6" style="width: 550px; height: 380px;margin-top: 20px;border: 2px solid;"></div><br>
+            <div id="curve_chart3" style="width: 550px; height: 380px;margin-top: 20px;border: 2px solid;"></div><br>
+            
+            
+            <br><br>
+            <br><br>
+        </div>
+    </div>
+</section>
+   <br><br>
+    
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>

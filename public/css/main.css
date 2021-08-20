@@ -1,0 +1,136 @@
+body{
+    background-color:  #203647;
+    background-image: url('img/back2.jpg');
+}
+
+#main{
+    
+    background-repeat:inherit;
+    display: grid;
+    width: 98%;
+    margin: 1% 0px 0px 1%;
+    background-color: #e45821;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px black;
+    grid-template-areas: 
+    'heading heading'
+    'output input'
+    'graph graph';
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.container{
+    /* border: 2px solid red; */
+    margin: 15px;
+    margin-left: -48px;
+}
+.primeryh{
+    text-align: center;
+    /* border: 2px solid green; */
+    font-family: 'Mukta', sans-serif;
+    font-size: 2.5rem;
+    color: indigo;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    text-decoration:wavy
+}
+/* .data{ */
+    /* border: orange 2px solid; */
+/* } */
+#input{
+    grid-area: input;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    line-height: 30px;
+}
+#input p{
+    margin: 35px 0px;
+    /* border: 2px solid red; */
+}
+#output{
+    grid-area: output;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 800px;
+    margin-right: -120px;
+    
+}
+
+
+
+#graph{
+    
+    grid-area: graph;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#experiment{
+    grid-area: graph;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+
+
+
+#output ul li{
+   
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+    height: 145px;
+    width: 195px;
+    background-color: rgb(248, 195, 115);
+    box-shadow: 2px 2px 4px black;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    border-radius: 2px;
+    display:inline-grid;
+    border:5px solid rgb(255, 255, 255);
+    line-height: 35px;
+    margin: 2px 0.5px;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+    
+}
+/* #graph div{
+    border: 2px solid black;
+}
+#graph ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 28px;
+    width: 300px;
+    background-color: rgb(111, 252, 106);
+    margin: 10px 0px;
+    border-radius: 20px;
+} */
+.slider{
+    width: 400px;
+}
+#btn{
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
